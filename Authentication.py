@@ -11,7 +11,6 @@ def login(email, password):
     data = auth.sign_in_with_email_and_password(email, password)
     user_id = data['localId']
     user = get_user(user_id)
-    print(user)
     return Player(player_data=user)
 
 
