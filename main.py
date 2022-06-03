@@ -9,6 +9,8 @@ def main():
         print("### Game forcefully closed! ###")
     except EOFError:
         print("### Game forcefully closed! ###")
+    finally:
+        game.player.set_offline()
 
 
 if __name__ == '__main__':

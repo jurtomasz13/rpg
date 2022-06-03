@@ -1,10 +1,9 @@
-from random import randint
-
-from Authentication import login, signup, get_user
-from Duel import Duel
-from Firebase import db
-from Player import Player
 import time
+
+from Firebase import db
+from Authentication import login, signup
+from Duel import Duel
+from Player import Player
 
 
 class Game:
@@ -49,8 +48,6 @@ class Game:
             except ValueError:
                 print("Wrong value inserted!")
                 continue
-            except EOFError:
-                print("### Game forcefully closed! ###")
             except Exception:
                 print("Something went wrong!")
                 continue

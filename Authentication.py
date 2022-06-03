@@ -1,5 +1,5 @@
-from Character import Character
 from Firebase import db, auth
+from Character import Character
 from Player import Player
 
 
